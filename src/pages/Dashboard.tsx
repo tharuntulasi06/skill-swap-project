@@ -282,7 +282,7 @@ const Dashboard = () => {
                               <span className="text-sm">{match.rating}</span>
                             </div>
                           </div>
-                          <p className="font-medium text-violet-700">
+                          <p className="font-medium text-blue-700">
                             {match.skill}
                           </p>
                           <Badge

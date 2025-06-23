@@ -607,6 +607,119 @@ const Dashboard = () => {
           </div>
         </main>
       </div>
+
+      {/* Connection Request Dialog */}
+      <Dialog open={connectDialogOpen} onOpenChange={setConnectDialogOpen}>
+        <DialogContent className="max-w-md">
+          <DialogHeader>
+            <DialogTitle>Connect with {selectedMentor?.name}</DialogTitle>
+            <DialogDescription>
+              Send a skill exchange request to start learning together
+            </DialogDescription>
+          </DialogHeader>
+
+          <div className="space-y-4">
+            {/* Mentor Info */}
+            <div className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg">
+              <Avatar className="h-12 w-12">
+                <AvatarImage src={selectedMentor?.avatar} />
+                <AvatarFallback>
+                  {selectedMentor?.name
+                    ?.split(" ")
+                    .map((n: string) => n[0])
+                    .join("")}
+                </AvatarFallback>
+              </Avatar>
+              <div>
+                <h4 className="font-semibold">{selectedMentor?.name}</h4>
+                <p className="text-sm text-gray-600">
+                  {selectedMentor?.college}
+                </p>
+                <p className="text-sm font-medium text-blue-700">
+                  {selectedMentor?.skill}
+                </p>
+              </div>
+            </div>
+
+            {/* Form */}
+            <div className="space-y-4">
+              <div>
+                <Label htmlFor="skill-to-learn">
+                  What do you want to learn?
+                </Label>
+                <Select>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Select a skill" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value={selectedMentor?.skill || ""}>
+                      {selectedMentor?.skill}
+                    </SelectItem>
+                    <SelectItem value="related-skill">
+                      Related Skills
+                    </SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+
+              <div>
+                <Label htmlFor="skill-to-offer">
+                  What can you offer in return?
+                </Label>
+                <Input
+                  id="skill-to-offer"
+                  placeholder="e.g., JavaScript, Photography, Spanish..."
+                />
+              </div>
+
+              <div>
+                <Label htmlFor="message">Message (Optional)</Label>
+                <Textarea
+                  id="message"
+                  placeholder="Hi! I'm interested in learning from you. I can offer..."
+                  rows={3}
+                />
+              </div>
+
+              <div>
+                <Label htmlFor="session-type">Preferred Session Type</Label>
+                <Select>
+                  <SelectTrigger>
+                    <SelectValue placeholder="How would you like to meet?" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="video-call">Video Call</SelectItem>
+                    <SelectItem value="in-person">In Person</SelectItem>
+                    <SelectItem value="phone-call">Phone Call</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+
+              <div>
+                <Label htmlFor="availability">Your Availability</Label>
+                <Input
+                  id="availability"
+                  placeholder="e.g., Weekdays after 6PM, Weekends..."
+                />
+              </div>
+            </div>
+
+            {/* Actions */}
+            <div className="flex gap-3 pt-4">
+              <Button
+                variant="outline"
+                className="flex-1"
+                onClick={() => setConnectDialogOpen(false)}
+              >
+                Cancel
+              </Button>
+              <Button className="flex-1" onClick={handleSendRequest}>
+                Send Request
+              </Button>
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };

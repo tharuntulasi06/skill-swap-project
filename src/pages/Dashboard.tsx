@@ -305,6 +305,19 @@ const Dashboard = () => {
     { name: "Marketing", icon: TrendingUp, color: "bg-pink-100 text-pink-800" },
   ];
 
+  const handleConnectClick = (mentor: any) => {
+    setSelectedMentor(mentor);
+    setConnectDialogOpen(true);
+  };
+
+  const handleSendRequest = () => {
+    // In a real app, this would send the connection request to the backend
+    console.log("Sending connection request to:", selectedMentor?.name);
+    setConnectDialogOpen(false);
+    setSelectedMentor(null);
+    // You could add a toast notification here
+  };
+
   const sidebarItems = [
     { icon: User, label: "My Profile", href: "/profile" },
     { icon: BookOpen, label: "Browse Skills", href: "/browse" },

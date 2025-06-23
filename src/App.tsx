@@ -30,6 +30,11 @@ const App = () => (
         <Route path="/messages" element={<Messages />} />
         <Route path="/exchange" element={<Exchange />} />
         <Route path="/settings" element={<Settings />} />
+        <Route path="/admin/dashboard" element={<AdminDashboard />} />
+        <Route path="/admin/users" element={<AdminDashboard />} />
+        <Route path="/admin/content" element={<AdminDashboard />} />
+        <Route path="/admin/analytics" element={<AdminDashboard />} />
+        <Route path="/admin/settings" element={<AdminDashboard />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

@@ -24,6 +24,7 @@ import {
 const Navbar = () => {
   const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState("");
+  const [userRole, setUserRole] = useState<"user" | "admin">("user");
 
   const handleLogout = () => {
     navigate("/login");

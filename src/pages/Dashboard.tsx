@@ -652,11 +652,16 @@ const Dashboard = () => {
                     <SelectValue placeholder="Select a skill" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value={selectedMentor?.skill || ""}>
-                      {selectedMentor?.skill}
-                    </SelectItem>
+                    {selectedMentor?.skill && (
+                      <SelectItem value={selectedMentor.skill}>
+                        {selectedMentor.skill}
+                      </SelectItem>
+                    )}
                     <SelectItem value="related-skill">
                       Related Skills
+                    </SelectItem>
+                    <SelectItem value="general-mentoring">
+                      General Mentoring
                     </SelectItem>
                   </SelectContent>
                 </Select>

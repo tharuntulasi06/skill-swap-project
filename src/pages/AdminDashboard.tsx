@@ -196,7 +196,7 @@ const AdminDashboard = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Navbar />
+      <AdminNavbar />
 
       <div className="flex">
         {/* Admin Sidebar */}

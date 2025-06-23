@@ -15,7 +15,7 @@ const Index = () => {
       <div className="text-center">
         <h1 className="text-2xl font-semibold text-gray-800 flex items-center justify-center gap-3">
           <svg
-            className="animate-spin h-8 w-8 text-violet-600"
+            className="animate-spin h-8 w-8 text-blue-600"
             viewBox="0 0 50 50"
           >
             <circle

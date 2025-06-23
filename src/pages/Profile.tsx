@@ -152,7 +152,7 @@ const Profile = () => {
               <div className="flex flex-col sm:flex-row sm:items-end sm:space-x-6">
                 <Avatar className="h-32 w-32 border-4 border-white -mt-16 mb-4 sm:mb-0">
                   <AvatarImage src={user.avatar} />
-                  <AvatarFallback className="text-2xl bg-violet-100 text-violet-700">
+                  <AvatarFallback className="text-2xl bg-blue-100 text-blue-700">
                     {user.name
                       .split(" ")
                       .map((n) => n[0])

@@ -10,6 +10,7 @@ import BrowseSkills from "./pages/BrowseSkills";
 import Messages from "./pages/Messages";
 import Exchange from "./pages/Exchange";
 import Settings from "./pages/Settings";
+import AdminDashboard from "./pages/AdminDashboard";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();

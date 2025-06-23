@@ -553,7 +553,7 @@ const BrowseSkills = () => {
                 <div className="flex items-start gap-4 mb-4">
                   <Avatar className="h-16 w-16">
                     <AvatarImage src={user.avatar} />
-                    <AvatarFallback className="bg-violet-100 text-violet-700 text-lg">
+                    <AvatarFallback className="bg-blue-100 text-blue-700 text-lg">
                       {user.name
                         .split(" ")
                         .map((n) => n[0])

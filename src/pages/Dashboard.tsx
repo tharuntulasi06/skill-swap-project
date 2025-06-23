@@ -48,6 +48,9 @@ import {
 } from "lucide-react";
 
 const Dashboard = () => {
+  const [connectDialogOpen, setConnectDialogOpen] = useState(false);
+  const [selectedMentor, setSelectedMentor] = useState<any>(null);
+
   // Mock data
   const currentMatches = [
     {

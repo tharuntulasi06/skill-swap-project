@@ -11,6 +11,11 @@ import Messages from "./pages/Messages";
 import Exchange from "./pages/Exchange";
 import Settings from "./pages/Settings";
 import AdminDashboard from "./pages/AdminDashboard";
+import AdminAnalytics from "./pages/AdminAnalytics";
+import AdminUsers from "./pages/AdminUsers";
+import AdminContent from "./pages/AdminContent";
+import AdminModeration from "./pages/AdminModeration";
+import AdminSettings from "./pages/AdminSettings";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();

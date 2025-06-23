@@ -36,10 +36,11 @@ const App = () => (
         <Route path="/exchange" element={<Exchange />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/admin/dashboard" element={<AdminDashboard />} />
-        <Route path="/admin/users" element={<AdminDashboard />} />
-        <Route path="/admin/content" element={<AdminDashboard />} />
-        <Route path="/admin/analytics" element={<AdminDashboard />} />
-        <Route path="/admin/settings" element={<AdminDashboard />} />
+        <Route path="/admin/analytics" element={<AdminAnalytics />} />
+        <Route path="/admin/users" element={<AdminUsers />} />
+        <Route path="/admin/content" element={<AdminContent />} />
+        <Route path="/admin/moderation" element={<AdminModeration />} />
+        <Route path="/admin/settings" element={<AdminSettings />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

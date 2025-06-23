@@ -145,7 +145,7 @@ const Profile = () => {
         <Card className="mb-8">
           <div className="relative">
             {/* Cover Image */}
-            <div className="h-48 bg-gradient-to-r from-violet-500 via-purple-500 to-blue-500 rounded-t-lg"></div>
+            <div className="h-48 bg-violet-500 rounded-t-lg"></div>
 
             {/* Profile Info */}
             <div className="relative px-6 pb-6">

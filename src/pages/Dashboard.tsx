@@ -244,7 +244,7 @@ const Dashboard = () => {
                   {currentMatches.map((match) => (
                     <Card
                       key={match.id}
-                      className="border-l-4 border-l-violet-500"
+                      className="border-l-4 border-l-blue-500"
                     >
                       <CardContent className="p-4">
                         <div className="flex items-center gap-3 mb-3">

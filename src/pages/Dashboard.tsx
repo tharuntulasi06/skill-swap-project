@@ -243,6 +243,44 @@ const Dashboard = () => {
       icon: Calculator,
       color: "bg-indigo-100 text-indigo-800",
     },
+    { name: "Python", icon: Code, color: "bg-green-100 text-green-800" },
+    { name: "React", icon: Code, color: "bg-cyan-100 text-cyan-800" },
+    {
+      name: "Machine Learning",
+      icon: Code,
+      color: "bg-purple-100 text-purple-800",
+    },
+    { name: "Spanish", icon: Globe, color: "bg-orange-100 text-orange-800" },
+    { name: "Guitar", icon: Music, color: "bg-amber-100 text-amber-800" },
+    {
+      name: "Adobe Photoshop",
+      icon: Palette,
+      color: "bg-blue-100 text-blue-800",
+    },
+    { name: "Public Speaking", icon: Users, color: "bg-red-100 text-red-800" },
+    {
+      name: "Data Science",
+      icon: Calculator,
+      color: "bg-violet-100 text-violet-800",
+    },
+    { name: "UI/UX Design", icon: Palette, color: "bg-teal-100 text-teal-800" },
+    { name: "German", icon: Globe, color: "bg-gray-100 text-gray-800" },
+    { name: "Piano", icon: Music, color: "bg-slate-100 text-slate-800" },
+    { name: "Video Editing", icon: Camera, color: "bg-rose-100 text-rose-800" },
+    {
+      name: "Business Strategy",
+      icon: TrendingUp,
+      color: "bg-emerald-100 text-emerald-800",
+    },
+    {
+      name: "Creative Writing",
+      icon: BookOpen,
+      color: "bg-lime-100 text-lime-800",
+    },
+    { name: "Mandarin", icon: Globe, color: "bg-red-100 text-red-800" },
+    { name: "Node.js", icon: Code, color: "bg-green-100 text-green-800" },
+    { name: "Excel", icon: Calculator, color: "bg-blue-100 text-blue-800" },
+    { name: "Marketing", icon: TrendingUp, color: "bg-pink-100 text-pink-800" },
   ];
 
   const sidebarItems = [

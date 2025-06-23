@@ -344,7 +344,7 @@ const Dashboard = () => {
                             </div>
                           </div>
                           <div className="space-y-2">
-                            <p className="font-medium text-violet-700">
+                            <p className="font-medium text-blue-700">
                               {mentor.skill}
                             </p>
                             <div className="flex items-center justify-between">

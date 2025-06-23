@@ -180,9 +180,14 @@ const Navbar = () => {
                     Profile
                   </Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <Settings className="mr-2 h-4 w-4" />
-                  Settings
+                <DropdownMenuItem asChild>
+                  <Link
+                    to="/settings"
+                    className="flex items-center cursor-pointer"
+                  >
+                    <Settings className="mr-2 h-4 w-4" />
+                    Settings
+                  </Link>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem

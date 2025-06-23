@@ -327,6 +327,9 @@ const Dashboard = () => {
     { icon: Calendar, label: "Teach Requests", href: "/exchange" },
     { icon: Users, label: "Learn Requests", href: "/exchange" },
     { icon: MessageSquare, label: "Messages", href: "/messages" },
+    ...(userRole === "admin"
+      ? [{ icon: Settings, label: "Admin Panel", href: "/admin/dashboard" }]
+      : []),
   ];
 
   return (

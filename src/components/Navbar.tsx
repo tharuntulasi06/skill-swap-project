@@ -74,6 +74,11 @@ const Navbar = () => {
 
           {/* Right side - Notifications and Profile */}
           <div className="flex items-center gap-4">
+            {/* Role Switcher for Demo */}
+            <RoleSwitcher
+              currentRole={userRole}
+              onRoleChange={handleRoleChange}
+            />
             {/* Notifications */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>

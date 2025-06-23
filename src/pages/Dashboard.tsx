@@ -155,7 +155,7 @@ const Dashboard = () => {
         <main className="flex-1 p-6">
           <div className="max-w-6xl mx-auto space-y-8">
             {/* Welcome Section */}
-            <div className="bg-violet-600 rounded-2xl p-8 text-white">
+            <div className="bg-blue-600 rounded-2xl p-8 text-white">
               <h1 className="text-3xl font-bold mb-2">
                 Welcome back, John! 👋
               </h1>

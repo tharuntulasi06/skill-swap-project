@@ -51,6 +51,9 @@ const Dashboard = () => {
   const [connectDialogOpen, setConnectDialogOpen] = useState(false);
   const [selectedMentor, setSelectedMentor] = useState<any>(null);
 
+  // Mock user role - in a real app, this would come from auth context
+  const userRole = "user"; // or "admin"
+
   // Mock data
   const currentMatches = [
     {

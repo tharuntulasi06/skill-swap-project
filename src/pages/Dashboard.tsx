@@ -169,7 +169,7 @@ const Dashboard = () => {
                 <Button
                   asChild
                   variant="outline"
-                  className="text-white border-white hover:bg-white hover:text-violet-600"
+                  className="text-white border-white border-2 hover:bg-white hover:text-violet-600 bg-transparent"
                 >
                   <Link to="/exchange">View Requests</Link>
                 </Button>

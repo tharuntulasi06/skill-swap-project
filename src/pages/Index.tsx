@@ -28,7 +28,7 @@ const Index = () => {
               fill="none"
             />
             <circle
-              className="text-violet-600"
+              className="text-blue-600"
               cx="25"
               cy="25"
               r="20"

@@ -9,6 +9,7 @@ import Profile from "./pages/Profile";
 import BrowseSkills from "./pages/BrowseSkills";
 import Messages from "./pages/Messages";
 import Exchange from "./pages/Exchange";
+import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();

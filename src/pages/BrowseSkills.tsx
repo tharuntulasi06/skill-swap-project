@@ -605,7 +605,7 @@ const BrowseSkills = () => {
                         <Badge
                           key={skill}
                           variant="default"
-                          className="text-xs bg-violet-100 text-violet-800 hover:bg-violet-200"
+                          className="text-xs bg-blue-100 text-blue-800 hover:bg-blue-200"
                         >
                           {skill}
                         </Badge>

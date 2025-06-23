@@ -28,6 +28,7 @@ const App = () => (
         <Route path="/browse" element={<BrowseSkills />} />
         <Route path="/messages" element={<Messages />} />
         <Route path="/exchange" element={<Exchange />} />
+        <Route path="/settings" element={<Settings />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

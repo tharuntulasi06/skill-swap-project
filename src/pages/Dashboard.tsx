@@ -555,7 +555,11 @@ const Dashboard = () => {
                                 {mentor.sessions} sessions
                               </span>
                             </div>
-                            <Button size="sm" className="w-full">
+                            <Button
+                              size="sm"
+                              className="w-full"
+                              onClick={() => handleConnectClick(mentor)}
+                            >
                               Connect
                             </Button>
                           </div>
